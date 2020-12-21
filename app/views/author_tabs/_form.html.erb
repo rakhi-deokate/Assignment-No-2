@@ -1,0 +1,27 @@
+<%= form_with(model: author_tab) do |form| %>
+  <% if author_tab.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(author_tab.errors.count, "error") %> prohibited this author_tab from being saved:</h2>
+
+      <ul>
+        <% author_tab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :author_name %>
+    <%= form.text_field :author_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_of_birth %>
+    <%= form.number_field :date_of_birth %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

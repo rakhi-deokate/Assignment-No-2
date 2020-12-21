@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author name:</strong>
+  <%= @author_table1.author_name %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @author_table1.date_of_birth %>
+</p>
+
+<%= link_to 'Edit', edit_author_table1_path(@author_table1) %> |
+<%= link_to 'Back', author_table1s_path %>

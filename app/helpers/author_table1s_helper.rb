@@ -1,0 +1,2 @@
+module AuthorTable1sHelper
+end

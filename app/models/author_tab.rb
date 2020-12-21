@@ -1,0 +1,2 @@
+class AuthorTab < ApplicationRecord
+end
